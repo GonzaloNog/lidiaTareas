@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tarea1 : MonoBehaviour
 {
+    //Debug
     void Start()
     {
         
