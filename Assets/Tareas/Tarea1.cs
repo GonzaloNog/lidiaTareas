@@ -11,14 +11,15 @@ public class Tarea1 : MonoBehaviour
 
     public bool entrarEdificioGubernamental = true;
 
-    public int numero1 = 45;
-    public int numero2 = 63;
-    public int resultado = 108;
+    public int efectivo = 46;
+    public int cuenta = 63;
+    public int dineroTodal;
 
     //Debug
     void Start()
     {
         Debug.Log("Edad: " + edad + ", Nombre: " + nombre + ", Apellido: " + apellido + ", Altura: " + altura);
-        Debug.Log(numero1 + numero2);
+        dineroTodal = efectivo + cuenta;
+        Debug.Log(dineroTodal);
     }
 }
