@@ -249,7 +249,7 @@ MonoBehaviour:
   dinero: 278.7
   sueldo: 1500
   nombre: Blanca
-  comando: 
+  comando: crear cuenta
 --- !u!4 &1274581386
 Transform:
   m_ObjectHideFlags: 0

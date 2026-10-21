@@ -18,25 +18,26 @@ public class Tarea3 : MonoBehaviour
 
         switch (comando)
         {
-            case "crear cuenta":
+            case "crearCuenta":
                 crearCuenta();
                 Debug.Log("Crear cuenta");
                 break;
-            case "depositar dinero":
+            case "depositarDinero":
                 depositarDinero();
                 Debug.Log("Depositar dinero");
                 break;
-            case "retirar dinero":
+            case "retirarDinero":
                 retirarDinero();
                 Debug.Log("Retirar dinero");
                 break;
-            default:
+            case "borrarCuenta":
                 borrarCuenta();
                 Debug.Log("Borrar cuenta");
                 break;
+            default:
+                Debug.Log("codigo no encontrado");
+                break;
         }
-        
-
     }
 
     // Update is called once per frame
@@ -75,7 +76,8 @@ public class Tarea3 : MonoBehaviour
     {
         if(dinero >= 100)
         {
-            Debug.Log(dinero - 100);
+            dinero -= 100;
+            Debug.Log(dinero);
         }
         else
         {
@@ -85,7 +87,8 @@ public class Tarea3 : MonoBehaviour
 
     public void retirarDinero()
     {
-        Debug.Log(dinero + 100);
+        dinero += 100;
+        Debug.Log(dinero);
     }
 
     public void borrarCuenta()
