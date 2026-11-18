@@ -12,8 +12,8 @@ public class UImanager : MonoBehaviour
     public TMP_FontAsset miFont;
     public bool autoSize;
     public Button miBoton;
-    public ColorBlock miBotonColor;
-    public ColorBlock miBotonColor2;
+
+    public int num = 0;
     
     void Start()
     {
@@ -21,7 +21,6 @@ public class UImanager : MonoBehaviour
         textoClase.text = "hola mundo!!!!!!";
         textoClase.font = miFont;
         textoClase.enableAutoSizing = autoSize;
-        miBoton.colors = miBotonColor2;
     }
 
     public void nuevoColor()
